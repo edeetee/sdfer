@@ -82,6 +82,10 @@ impl<T, Storage: AsRef<[T]>> Image2d<T, Storage> {
         }
     }
 
+    pub fn storage(&self) -> &Storage {
+        self.storage
+    }
+
     pub fn width(&self) -> usize {
         self.width
     }
